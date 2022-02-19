@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.thymeleaf.org" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="ja">
+    <title>Alphabiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="[x] description : Alphabiz">
+    <meta name="keywords" content="[x] keywords : Alphabiz">
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <link rel="shortcut icon" th:href="@{/img/favicon.ico}">
+    <link rel="stylesheet" th:href="@{/css/lib/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <script th:src="@{/js/lib/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{/js/lib/jquery.cookie.min.js}"></script>
+    <script th:src="@{/js/lib/bootstrap/bootstrap.bundle.min.js}"></script>
+  </head>
+  <body >
+    <div th:replace="fragments/header::header"></div>
+    <div class="rms-layout">
+
+      <main class="rms-main" >
+        <div th:replace="fragments/footer::footer"></div>
+      </main>
+    </div>
+
+	<!-- ============ /JavaScript ============-->
+	<script th:inline="javascript">
+	</script>
+  </body>
+</html>
