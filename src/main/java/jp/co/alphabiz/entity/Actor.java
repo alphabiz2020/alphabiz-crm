@@ -14,9 +14,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-
 @Entity
 @Table(name = "actor")
 public class Actor {
@@ -94,9 +91,5 @@ public class Actor {
     this.pref = pref;
   }
 
-  @Override
-  public String toString() {
-      return ToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE);
-  }
 
 }

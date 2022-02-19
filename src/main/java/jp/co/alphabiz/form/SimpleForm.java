@@ -10,9 +10,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.hibernate.validator.constraints.Email;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -166,16 +163,5 @@ public class SimpleForm implements Serializable {
     this.fradio = fradio;
   }
 
-  public String getFareaNl2br() {
-    if (StringUtils.isNotEmpty(this.farea)) {
-      return this.farea.replaceAll("\n", "<br/>");
-    }
-    return "";
-  }
-
-  @Override
-  public String toString() {
-    return ToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE);
-  }
 
 }

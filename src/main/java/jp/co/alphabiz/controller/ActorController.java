@@ -78,8 +78,8 @@ public class ActorController {
     logger.debug("Actor + detail");
     ModelAndView mv = new ModelAndView();
     mv.setViewName("Actor/detail");
-    Actor actor = actorRepository.findOne(id);
-    mv.addObject("actor", actor);
+//    Actor actor = actorRepository.findOne(id);
+//    mv.addObject("actor", actor);
     return mv;
   }
 
@@ -126,7 +126,7 @@ public class ActorController {
   @RequestMapping(value = "/actor/delete/{id}", method = RequestMethod.GET)
   public String delete(@PathVariable Integer id, RedirectAttributes attributes, Model model) {
     logger.debug("Actor + delete");
-    actorRepository.delete(id);
+//    actorRepository.delete(id);
     attributes.addFlashAttribute("deleteMessage", "delete ID:" + id);
     return "redirect:/actor";
   }
