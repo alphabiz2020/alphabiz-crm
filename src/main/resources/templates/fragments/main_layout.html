@@ -18,7 +18,9 @@
 </head>
 <body>
 	<div th:replace="fragments/header::header"></div>
-	<div layout:fragment="contents"></div>
+	<div class="album py-5 bg-light">
+		<div layout:fragment="contents"></div>
+	</div>
 	<div th:replace="fragments/footer::footer"></div>
 
 	<!-- ============ /JavaScript ============-->
