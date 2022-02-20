@@ -1,0 +1,13 @@
+.row label {
+	padding-right: 20px;
+}
+
+.row input {
+	display: inline-block;
+	width: 300px;
+}
+
+.form-select {
+	display: inline-block;
+	width: 300px;
+}

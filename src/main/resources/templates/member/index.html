@@ -1,68 +1,58 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-
-<body>
-<div layout:fragment="contents" class="rms-content">
-  <div class="container">
-    <div class="page-header">
-      <h1 th:utext="#{actor.index.title}">actor.index.title</h1>
-      <p th:if="${emptyMessage}" th:text="${emptyMessage}">empty message</p>
-      <p th:if="${errorMessage}" th:text="${errorMessage}">error message</p>
-      <p th:if="${deleteMessage}" th:text="${deleteMessage}">delete message</p>
-    </div>
-
-    <div th:replace="_temp :: nav"></div>
-
-    <div class="row">
-      <div class="col-md-6">
+<html xmlns:th="http://www.thymeleaf.org" layout:decorate="~{fragments/main_layout}">
+  <head>
+    <link rel="stylesheet" th:href="@{/css/member.css}" />
+    <script th:src="@{/js/member.js}"></script>
+  </head>
+  <body>
+    <div layout:fragment="contents">
+      <div class="container">
+        <div class="page-header">
+          <h1>社員検索</h1>
+        </div>
         <form action="/actor/search" th:action="@{/actor/search}" method="get">
-          <div class="input-group">
-            <input type="text" name="keyword" class="form-control" placeholder="Search for..." />
-            <span class="input-group-btn">
-              <input class="btn btn-default" type="submit" value="Search!" />
-            </span>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">名前</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">地域</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <table class="table table-striped">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">検索</button>
+              </div>
+            </div>
+          </div>
+          <table class="table table-bordered">
           <thead>
             <tr>
-              <th th:utext="#{actor.id}">id</th>
-              <th th:utext="#{actor.name}">name</th>
-              <th th:utext="#{actor.height}">height</th>
-              <th th:utext="#{actor.blood}">blood</th>
-              <th th:utext="#{actor.birthday}">birthday</th>
-              <th th:utext="#{actor.birthplace}">birthplace</th>
-              <th th:utext="#{actor.update_at}">update_at</th>
+              <th>No.</th>
+              <th>名前</th>
+              <th>身長</th>
+              <th>血液型</th>
+              <th>誕生日</th>
+              <th>出身地</th>
+              <th>更新日時</th>
               <th>&nbsp;</th>
             </tr>
           </thead>
-          <tbody>
-            <tr th:each="item,iterStat : ${list}">
-              <td>
-                <a class="btn btn-default" href="/actor/${item.id}" th:href="@{/actor/{id}(id=${item.id})}" th:text="${item.id}">1</a>
-              </td>
-              <td th:text="${item.name}">1</td>
-              <td th:text="${item.height != null}? ${item.height} : '-'">1</td>
-              <td th:text="${item.blood != null}? ${item.blood} : '-'">1</td>
-              <td th:text="${item.birthday != null}? ${#dates.format(item.birthday,'yyyy-MM-dd')} : '-'">1</td>
-              <td th:text="(${item.birthplaceId != null}? ${item.birthplaceId} + ':' : '') + (${item.pref != null }? ${item.pref.name} : '(unknown)')"></td>
-              <td th:text="${item.updateAt}">1</td>
-              <td>
-                <a class="btn btn-warning" href="/actor/delete/${item.id}" th:href="@{/actor/delete/{id}(id=${item.id})}">delete</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          </table>
+        </form>
       </div>
     </div>
-
-  </div>
-</div>
-</body>
+  </body>
 </html>
