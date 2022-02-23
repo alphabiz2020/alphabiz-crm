@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.co.alphabiz.dto.member.ActorInputDto;
 import jp.co.alphabiz.entity.Actor;
-import jp.co.alphabiz.form.ActorForm;
+import jp.co.alphabiz.form.MemberForm;
 import jp.co.alphabiz.service.MemberService;
 
 @Controller
@@ -34,7 +34,7 @@ public class MemberController extends AbstractController {
 	}
 
 	@RequestMapping(value = "/search", method = RequestMethod.POST)
-	public String search(ActorForm form, Model model) {
+	public String search(MemberForm form, Model model) {
 		logger.debug("Actor + search");
 		String name = form.getName();
 		String birthplaceId = form.getBirthplaceId();

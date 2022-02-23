@@ -5,7 +5,7 @@ import java.io.Serializable;
 import lombok.Data;
 
 @Data
-public class ActorForm implements Serializable {
+public class MemberForm implements Serializable {
 
 
   private String name;
