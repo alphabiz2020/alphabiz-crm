@@ -12089,3 +12089,1092 @@ Consider defining a bean of type 'jp.co.alphabiz.service.MemberService' in your 
 2022-02-20 20:16:09.012 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@36055809: (connection evicted) 
 2022-02-20 20:16:09.022 DEBUG [RMI TCP Connection(81)-127.0.0.1] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0) 
 2022-02-20 20:16:09.023 INFO  [RMI TCP Connection(81)-127.0.0.1] - HikariPool-1 - Shutdown completed. 
+2022-02-23 18:34:58.350 DEBUG [background-preinit] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2022-02-23 18:34:58.386 INFO  [main] - Starting AlphabizCrmApp using Java 1.8.0_202 on choudaitamenoMacBook-puro.local with PID 12834 (/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes started by zhangdawei in /Users/zhangdawei/Documents/workspace/alphabiz-crm) 
+2022-02-23 18:34:58.387 DEBUG [main] - Running with Spring Boot v2.6.2, Spring v5.3.14 
+2022-02-23 18:34:58.387 INFO  [main] - No active profile set, falling back to default profiles: default 
+2022-02-23 18:34:59.121 DEBUG [main] - Searching for mappers annotated with @Mapper 
+2022-02-23 18:34:59.121 DEBUG [main] - Using auto-configuration base package 'jp.co.alphabiz' 
+2022-02-23 18:34:59.125 DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. 
+2022-02-23 18:34:59.129 DEBUG [main] - Identified candidate component class: file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class] 
+2022-02-23 18:34:59.130 DEBUG [main] - Creating MapperFactoryBean with name 'actorMapper' and 'jp.co.alphabiz.repository.mapper.ActorMapper' mapperInterface 
+2022-02-23 18:34:59.131 DEBUG [main] - Enabling autowire by type for MapperFactoryBean with name 'actorMapper'. 
+2022-02-23 18:34:59.193 INFO  [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-02-23 18:34:59.284 WARN  [main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'actorMapper' defined in jp.co.alphabiz.repository.mapper.ActorMapper defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in jp.co.alphabiz.repository.mapper.ActorMapper defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] for bean 'actorMapper': There is already [Generic bean: class [org.mybatis.spring.mapper.MapperFactoryBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=2; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class]] bound. 
+2022-02-23 18:34:59.310 INFO  [main] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-02-23 18:34:59.333 ERROR [main] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'actorMapper', defined in jp.co.alphabiz.repository.mapper.ActorMapper defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+ 
+2022-02-23 18:38:53.173 DEBUG [background-preinit] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2022-02-23 18:38:53.182 INFO  [main] - Starting AlphabizCrmApp using Java 1.8.0_202 on choudaitamenoMacBook-puro.local with PID 12925 (/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes started by zhangdawei in /Users/zhangdawei/Documents/workspace/alphabiz-crm) 
+2022-02-23 18:38:53.182 DEBUG [main] - Running with Spring Boot v2.6.2, Spring v5.3.14 
+2022-02-23 18:38:53.183 INFO  [main] - No active profile set, falling back to default profiles: default 
+2022-02-23 18:38:53.806 DEBUG [main] - Searching for mappers annotated with @Mapper 
+2022-02-23 18:38:53.806 DEBUG [main] - Using auto-configuration base package 'jp.co.alphabiz' 
+2022-02-23 18:38:53.810 DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. 
+2022-02-23 18:38:53.814 DEBUG [main] - Identified candidate component class: file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class] 
+2022-02-23 18:38:53.814 DEBUG [main] - Creating MapperFactoryBean with name 'actorMapper' and 'jp.co.alphabiz.repository.mapper.ActorMapper' mapperInterface 
+2022-02-23 18:38:53.815 DEBUG [main] - Enabling autowire by type for MapperFactoryBean with name 'actorMapper'. 
+2022-02-23 18:38:53.876 INFO  [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-02-23 18:38:53.916 INFO  [main] - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces. 
+2022-02-23 18:38:54.611 INFO  [main] - Tomcat initialized with port(s): 8090 (http) 
+2022-02-23 18:38:54.624 INFO  [main] - Initializing ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:38:54.625 INFO  [main] - Starting service [Tomcat] 
+2022-02-23 18:38:54.625 INFO  [main] - Starting Servlet engine: [Apache Tomcat/9.0.56] 
+2022-02-23 18:38:54.691 INFO  [main] - Initializing Spring embedded WebApplicationContext 
+2022-02-23 18:38:54.691 INFO  [main] - Root WebApplicationContext: initialization completed in 1283 ms 
+2022-02-23 18:38:54.789 DEBUG [main] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+2022-02-23 18:38:54.858 DEBUG [main] - HikariPool-1 - configuration: 
+2022-02-23 18:38:54.861 DEBUG [main] - allowPoolSuspension................................false 
+2022-02-23 18:38:54.862 DEBUG [main] - autoCommit................................true 
+2022-02-23 18:38:54.862 DEBUG [main] - catalog................................none 
+2022-02-23 18:38:54.862 DEBUG [main] - connectionInitSql................................none 
+2022-02-23 18:38:54.862 DEBUG [main] - connectionTestQuery................................none 
+2022-02-23 18:38:54.862 DEBUG [main] - connectionTimeout................................30000 
+2022-02-23 18:38:54.862 DEBUG [main] - dataSource................................none 
+2022-02-23 18:38:54.862 DEBUG [main] - dataSourceClassName................................none 
+2022-02-23 18:38:54.862 DEBUG [main] - dataSourceJNDI................................none 
+2022-02-23 18:38:54.863 DEBUG [main] - dataSourceProperties................................{password=<masked>} 
+2022-02-23 18:38:54.864 DEBUG [main] - driverClassName................................"com.mysql.cj.jdbc.Driver" 
+2022-02-23 18:38:54.864 DEBUG [main] - exceptionOverrideClassName................................none 
+2022-02-23 18:38:54.865 DEBUG [main] - healthCheckProperties................................{} 
+2022-02-23 18:38:54.865 DEBUG [main] - healthCheckRegistry................................none 
+2022-02-23 18:38:54.865 DEBUG [main] - idleTimeout................................600000 
+2022-02-23 18:38:54.865 DEBUG [main] - initializationFailTimeout................................1 
+2022-02-23 18:38:54.865 DEBUG [main] - isolateInternalQueries................................false 
+2022-02-23 18:38:54.866 DEBUG [main] - jdbcUrl................................jdbc:mysql://localhost/sample_db?characterEncoding=UTF-8 
+2022-02-23 18:38:54.866 DEBUG [main] - keepaliveTime................................0 
+2022-02-23 18:38:54.866 DEBUG [main] - leakDetectionThreshold................................0 
+2022-02-23 18:38:54.866 DEBUG [main] - maxLifetime................................1800000 
+2022-02-23 18:38:54.868 DEBUG [main] - maximumPoolSize................................10 
+2022-02-23 18:38:54.868 DEBUG [main] - metricRegistry................................none 
+2022-02-23 18:38:54.869 DEBUG [main] - metricsTrackerFactory................................none 
+2022-02-23 18:38:54.869 DEBUG [main] - minimumIdle................................10 
+2022-02-23 18:38:54.869 DEBUG [main] - password................................<masked> 
+2022-02-23 18:38:54.869 DEBUG [main] - poolName................................"HikariPool-1" 
+2022-02-23 18:38:54.869 DEBUG [main] - readOnly................................false 
+2022-02-23 18:38:54.869 DEBUG [main] - registerMbeans................................false 
+2022-02-23 18:38:54.869 DEBUG [main] - scheduledExecutor................................none 
+2022-02-23 18:38:54.869 DEBUG [main] - schema................................none 
+2022-02-23 18:38:54.869 DEBUG [main] - threadFactory................................internal 
+2022-02-23 18:38:54.869 DEBUG [main] - transactionIsolation................................default 
+2022-02-23 18:38:54.869 DEBUG [main] - username................................"test_user" 
+2022-02-23 18:38:54.870 DEBUG [main] - validationTimeout................................5000 
+2022-02-23 18:38:54.870 INFO  [main] - HikariPool-1 - Starting... 
+2022-02-23 18:38:55.466 DEBUG [main] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33f2df51 
+2022-02-23 18:38:55.468 INFO  [main] - HikariPool-1 - Start completed. 
+2022-02-23 18:38:55.569 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0) 
+2022-02-23 18:38:55.603 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2118f990 
+2022-02-23 18:38:55.636 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@553472ab 
+2022-02-23 18:38:55.665 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bf92592 
+2022-02-23 18:38:55.704 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28026cc8 
+2022-02-23 18:38:55.739 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@123c1434 
+2022-02-23 18:38:55.768 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@713e9772 
+2022-02-23 18:38:55.795 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1240b778 
+2022-02-23 18:38:55.814 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@134ed0c5 
+2022-02-23 18:38:55.840 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310fc9d 
+2022-02-23 18:38:55.841 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:38:56.796 INFO  [main] - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-02-23 18:38:56.886 DEBUG [main] - Property 'mapperLocations' was not specified. 
+2022-02-23 18:38:57.504 WARN  [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-02-23 18:38:57.650 DEBUG [main] - 
+	j.c.a.c.ErrorController:
+	{ [/error/500]}: error500()
+	{ [/error/404]}: error404() 
+2022-02-23 18:38:57.652 DEBUG [main] - 
+	j.c.a.c.IndexController:
+	{GET [/index/ || /]}: initializer(Model) 
+2022-02-23 18:38:57.653 DEBUG [main] - 
+	j.c.a.c.MemberController:
+	{GET [/member]}: index(Model)
+	{GET [/member/search]}: search(ActorForm,Model) 
+2022-02-23 18:38:57.654 DEBUG [main] - 
+	j.c.a.c.SimpleController:
+	{GET [/simple/]}: index(SimpleForm,Model)
+	{POST [/simple/confirm]}: confirm(SimpleForm,BindingResult,Model) 
+2022-02-23 18:38:57.657 DEBUG [main] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse) 
+2022-02-23 18:38:57.670 DEBUG [main] - 'beanNameHandlerMapping' {} 
+2022-02-23 18:38:57.682 DEBUG [main] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]} 
+2022-02-23 18:38:57.759 DEBUG [main] - No org.mybatis.spring.mapper.MapperFactoryBean found. 
+2022-02-23 18:38:57.925 INFO  [main] - Starting ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:38:57.946 INFO  [main] - Tomcat started on port(s): 8090 (http) with context path '' 
+2022-02-23 18:38:57.954 INFO  [main] - Started AlphabizCrmApp in 5.086 seconds (JVM running for 5.702) 
+2022-02-23 18:39:20.241 INFO  [http-nio-8090-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-02-23 18:39:20.242 INFO  [http-nio-8090-exec-1] - Initializing Servlet 'dispatcherServlet' 
+2022-02-23 18:39:20.243 INFO  [http-nio-8090-exec-1] - Completed initialization in 1 ms 
+2022-02-23 18:39:23.368 DEBUG [http-nio-8090-exec-1] - member + index 
+2022-02-23 18:39:25.571 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:39:25.572 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:39:55.573 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:39:55.575 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:40:25.576 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:40:25.579 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:40:55.581 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:40:55.581 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:41:25.583 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:41:25.584 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:41:55.590 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:41:55.593 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:42:25.597 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:42:25.598 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:42:55.598 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:42:55.599 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:43:25.603 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:43:25.605 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:43:55.610 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:43:55.610 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:44:25.611 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:44:25.613 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:44:55.614 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:44:55.615 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:45:25.615 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:45:25.619 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:45:55.622 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:45:55.624 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:46:25.626 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:46:25.628 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:46:55.631 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:46:55.634 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:47:25.634 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:47:25.635 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:47:55.640 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:47:55.641 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:48:25.642 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:48:25.644 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:48:55.647 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:48:55.650 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:49:25.652 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:49:25.654 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:49:55.660 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:49:55.663 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:50:25.665 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:50:25.667 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:50:55.670 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:50:55.671 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:51:25.673 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:51:25.675 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:51:55.680 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:51:55.681 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:52:25.686 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:52:25.686 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:52:38.787 INFO  [RMI TCP Connection(25)-127.0.0.1] - Application shutdown requested. 
+2022-02-23 18:52:38.805 INFO  [RMI TCP Connection(25)-127.0.0.1] - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-02-23 18:52:38.809 INFO  [RMI TCP Connection(25)-127.0.0.1] - HikariPool-1 - Shutdown initiated... 
+2022-02-23 18:52:38.809 DEBUG [RMI TCP Connection(25)-127.0.0.1] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:52:38.810 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33f2df51: (connection evicted) 
+2022-02-23 18:52:38.812 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2118f990: (connection evicted) 
+2022-02-23 18:52:38.812 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@553472ab: (connection evicted) 
+2022-02-23 18:52:38.813 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5bf92592: (connection evicted) 
+2022-02-23 18:52:38.813 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@28026cc8: (connection evicted) 
+2022-02-23 18:52:38.813 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@123c1434: (connection evicted) 
+2022-02-23 18:52:38.814 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@713e9772: (connection evicted) 
+2022-02-23 18:52:38.814 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1240b778: (connection evicted) 
+2022-02-23 18:52:38.815 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@134ed0c5: (connection evicted) 
+2022-02-23 18:52:38.815 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@310fc9d: (connection evicted) 
+2022-02-23 18:52:38.815 DEBUG [RMI TCP Connection(25)-127.0.0.1] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0) 
+2022-02-23 18:52:38.816 INFO  [RMI TCP Connection(25)-127.0.0.1] - HikariPool-1 - Shutdown completed. 
+2022-02-23 18:52:49.401 DEBUG [background-preinit] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2022-02-23 18:52:49.411 INFO  [main] - Starting AlphabizCrmApp using Java 1.8.0_202 on choudaitamenoMacBook-puro.local with PID 13113 (/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes started by zhangdawei in /Users/zhangdawei/Documents/workspace/alphabiz-crm) 
+2022-02-23 18:52:49.412 DEBUG [main] - Running with Spring Boot v2.6.2, Spring v5.3.14 
+2022-02-23 18:52:49.412 INFO  [main] - No active profile set, falling back to default profiles: default 
+2022-02-23 18:52:50.051 DEBUG [main] - Searching for mappers annotated with @Mapper 
+2022-02-23 18:52:50.051 DEBUG [main] - Using auto-configuration base package 'jp.co.alphabiz' 
+2022-02-23 18:52:50.055 DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. 
+2022-02-23 18:52:50.059 DEBUG [main] - Identified candidate component class: file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class] 
+2022-02-23 18:52:50.060 DEBUG [main] - Creating MapperFactoryBean with name 'actorMapper' and 'jp.co.alphabiz.repository.mapper.ActorMapper' mapperInterface 
+2022-02-23 18:52:50.061 DEBUG [main] - Enabling autowire by type for MapperFactoryBean with name 'actorMapper'. 
+2022-02-23 18:52:50.106 INFO  [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-02-23 18:52:50.125 INFO  [main] - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces. 
+2022-02-23 18:52:50.603 INFO  [main] - Tomcat initialized with port(s): 8090 (http) 
+2022-02-23 18:52:50.611 INFO  [main] - Initializing ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:52:50.612 INFO  [main] - Starting service [Tomcat] 
+2022-02-23 18:52:50.612 INFO  [main] - Starting Servlet engine: [Apache Tomcat/9.0.56] 
+2022-02-23 18:52:50.673 INFO  [main] - Initializing Spring embedded WebApplicationContext 
+2022-02-23 18:52:50.674 INFO  [main] - Root WebApplicationContext: initialization completed in 1035 ms 
+2022-02-23 18:52:50.732 DEBUG [main] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@764c12b6 
+2022-02-23 18:52:50.782 DEBUG [main] - HikariPool-1 - configuration: 
+2022-02-23 18:52:50.784 DEBUG [main] - allowPoolSuspension................................false 
+2022-02-23 18:52:50.784 DEBUG [main] - autoCommit................................true 
+2022-02-23 18:52:50.784 DEBUG [main] - catalog................................none 
+2022-02-23 18:52:50.784 DEBUG [main] - connectionInitSql................................none 
+2022-02-23 18:52:50.784 DEBUG [main] - connectionTestQuery................................none 
+2022-02-23 18:52:50.784 DEBUG [main] - connectionTimeout................................30000 
+2022-02-23 18:52:50.785 DEBUG [main] - dataSource................................none 
+2022-02-23 18:52:50.785 DEBUG [main] - dataSourceClassName................................none 
+2022-02-23 18:52:50.785 DEBUG [main] - dataSourceJNDI................................none 
+2022-02-23 18:52:50.785 DEBUG [main] - dataSourceProperties................................{password=<masked>} 
+2022-02-23 18:52:50.785 DEBUG [main] - driverClassName................................"com.mysql.cj.jdbc.Driver" 
+2022-02-23 18:52:50.785 DEBUG [main] - exceptionOverrideClassName................................none 
+2022-02-23 18:52:50.785 DEBUG [main] - healthCheckProperties................................{} 
+2022-02-23 18:52:50.785 DEBUG [main] - healthCheckRegistry................................none 
+2022-02-23 18:52:50.785 DEBUG [main] - idleTimeout................................600000 
+2022-02-23 18:52:50.786 DEBUG [main] - initializationFailTimeout................................1 
+2022-02-23 18:52:50.786 DEBUG [main] - isolateInternalQueries................................false 
+2022-02-23 18:52:50.786 DEBUG [main] - jdbcUrl................................jdbc:mysql://localhost/sample_db?characterEncoding=UTF-8 
+2022-02-23 18:52:50.786 DEBUG [main] - keepaliveTime................................0 
+2022-02-23 18:52:50.786 DEBUG [main] - leakDetectionThreshold................................0 
+2022-02-23 18:52:50.786 DEBUG [main] - maxLifetime................................1800000 
+2022-02-23 18:52:50.786 DEBUG [main] - maximumPoolSize................................10 
+2022-02-23 18:52:50.786 DEBUG [main] - metricRegistry................................none 
+2022-02-23 18:52:50.786 DEBUG [main] - metricsTrackerFactory................................none 
+2022-02-23 18:52:50.786 DEBUG [main] - minimumIdle................................10 
+2022-02-23 18:52:50.786 DEBUG [main] - password................................<masked> 
+2022-02-23 18:52:50.787 DEBUG [main] - poolName................................"HikariPool-1" 
+2022-02-23 18:52:50.787 DEBUG [main] - readOnly................................false 
+2022-02-23 18:52:50.787 DEBUG [main] - registerMbeans................................false 
+2022-02-23 18:52:50.787 DEBUG [main] - scheduledExecutor................................none 
+2022-02-23 18:52:50.787 DEBUG [main] - schema................................none 
+2022-02-23 18:52:50.787 DEBUG [main] - threadFactory................................internal 
+2022-02-23 18:52:50.787 DEBUG [main] - transactionIsolation................................default 
+2022-02-23 18:52:50.787 DEBUG [main] - username................................"test_user" 
+2022-02-23 18:52:50.787 DEBUG [main] - validationTimeout................................5000 
+2022-02-23 18:52:50.787 INFO  [main] - HikariPool-1 - Starting... 
+2022-02-23 18:52:51.124 DEBUG [main] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f1868c9 
+2022-02-23 18:52:51.126 INFO  [main] - HikariPool-1 - Start completed. 
+2022-02-23 18:52:51.230 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0) 
+2022-02-23 18:52:51.254 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dfb1382 
+2022-02-23 18:52:51.269 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@494bf42c 
+2022-02-23 18:52:51.284 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4154f409 
+2022-02-23 18:52:51.302 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@374db453 
+2022-02-23 18:52:51.319 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a8a524f 
+2022-02-23 18:52:51.334 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33907584 
+2022-02-23 18:52:51.354 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a79d61b 
+2022-02-23 18:52:51.368 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@496b76c5 
+2022-02-23 18:52:51.382 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e7985e8 
+2022-02-23 18:52:51.382 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:52:52.034 INFO  [main] - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-02-23 18:52:52.113 DEBUG [main] - Property 'mapperLocations' was not specified. 
+2022-02-23 18:52:52.350 WARN  [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-02-23 18:52:52.505 DEBUG [main] - 
+	j.c.a.c.ErrorController:
+	{ [/error/500]}: error500()
+	{ [/error/404]}: error404() 
+2022-02-23 18:52:52.507 DEBUG [main] - 
+	j.c.a.c.IndexController:
+	{GET [/index/ || /]}: initializer(Model) 
+2022-02-23 18:52:52.509 DEBUG [main] - 
+	j.c.a.c.MemberController:
+	{GET [/member]}: index(Model)
+	{GET [/member/search]}: search(ActorForm,Model) 
+2022-02-23 18:52:52.510 DEBUG [main] - 
+	j.c.a.c.SimpleController:
+	{GET [/simple/]}: index(SimpleForm,Model)
+	{POST [/simple/confirm]}: confirm(SimpleForm,BindingResult,Model) 
+2022-02-23 18:52:52.512 DEBUG [main] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse) 
+2022-02-23 18:52:52.526 DEBUG [main] - 'beanNameHandlerMapping' {} 
+2022-02-23 18:52:52.538 DEBUG [main] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]} 
+2022-02-23 18:52:52.621 DEBUG [main] - No org.mybatis.spring.mapper.MapperFactoryBean found. 
+2022-02-23 18:52:52.715 INFO  [main] - Starting ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:52:52.743 INFO  [main] - Tomcat started on port(s): 8090 (http) with context path '' 
+2022-02-23 18:52:52.762 INFO  [main] - Started AlphabizCrmApp in 3.671 seconds (JVM running for 4.253) 
+2022-02-23 18:53:01.284 INFO  [http-nio-8090-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-02-23 18:53:01.284 INFO  [http-nio-8090-exec-1] - Initializing Servlet 'dispatcherServlet' 
+2022-02-23 18:53:01.285 INFO  [http-nio-8090-exec-1] - Completed initialization in 1 ms 
+2022-02-23 18:53:01.378 DEBUG [http-nio-8090-exec-1] - member + index 
+2022-02-23 18:53:06.276 DEBUG [http-nio-8090-exec-10] - member + index 
+2022-02-23 18:53:21.236 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:53:21.237 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:53:51.238 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:53:51.238 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:54:21.243 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:54:21.245 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:54:51.250 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:54:51.252 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:55:21.254 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:55:21.256 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:55:51.259 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:55:51.261 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:56:21.266 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:56:21.268 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:56:51.270 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:56:51.271 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:57:08.296 DEBUG [http-nio-8090-exec-8] - member + index 
+2022-02-23 18:57:11.822 ERROR [http-nio-8090-exec-7] - [THYMELEAF][http-nio-8090-exec-7] Exception processing template "error": Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers 
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-23 18:57:11.830 ERROR [http-nio-8090-exec-7] - Servlet.service() for servlet [dispatcherServlet] threw exception 
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-23 18:57:11.831 ERROR [http-nio-8090-exec-7] - Exception Processing ErrorPage[errorCode=0, location=/error] 
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 35 common frames omitted
+2022-02-23 18:57:21.271 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:57:21.274 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:57:22.314 INFO  [RMI TCP Connection(15)-127.0.0.1] - Application shutdown requested. 
+2022-02-23 18:57:22.346 INFO  [RMI TCP Connection(15)-127.0.0.1] - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-02-23 18:57:22.348 INFO  [RMI TCP Connection(15)-127.0.0.1] - HikariPool-1 - Shutdown initiated... 
+2022-02-23 18:57:22.349 DEBUG [RMI TCP Connection(15)-127.0.0.1] - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:57:22.350 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@f1868c9: (connection evicted) 
+2022-02-23 18:57:22.352 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3dfb1382: (connection evicted) 
+2022-02-23 18:57:22.352 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@494bf42c: (connection evicted) 
+2022-02-23 18:57:22.353 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4154f409: (connection evicted) 
+2022-02-23 18:57:22.353 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@374db453: (connection evicted) 
+2022-02-23 18:57:22.353 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7a8a524f: (connection evicted) 
+2022-02-23 18:57:22.353 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33907584: (connection evicted) 
+2022-02-23 18:57:22.354 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1a79d61b: (connection evicted) 
+2022-02-23 18:57:22.354 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@496b76c5: (connection evicted) 
+2022-02-23 18:57:22.355 DEBUG [HikariPool-1 connection closer] - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@e7985e8: (connection evicted) 
+2022-02-23 18:57:22.355 DEBUG [RMI TCP Connection(15)-127.0.0.1] - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0) 
+2022-02-23 18:57:22.355 INFO  [RMI TCP Connection(15)-127.0.0.1] - HikariPool-1 - Shutdown completed. 
+2022-02-23 18:57:31.392 DEBUG [background-preinit] - Logging Provider: org.jboss.logging.Log4j2LoggerProvider 
+2022-02-23 18:57:31.409 INFO  [main] - Starting AlphabizCrmApp using Java 1.8.0_202 on choudaitamenoMacBook-puro.local with PID 13271 (/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes started by zhangdawei in /Users/zhangdawei/Documents/workspace/alphabiz-crm) 
+2022-02-23 18:57:31.410 DEBUG [main] - Running with Spring Boot v2.6.2, Spring v5.3.14 
+2022-02-23 18:57:31.410 INFO  [main] - No active profile set, falling back to default profiles: default 
+2022-02-23 18:57:32.207 DEBUG [main] - Searching for mappers annotated with @Mapper 
+2022-02-23 18:57:32.207 DEBUG [main] - Using auto-configuration base package 'jp.co.alphabiz' 
+2022-02-23 18:57:32.213 DEBUG [main] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter. 
+2022-02-23 18:57:32.217 DEBUG [main] - Identified candidate component class: file [/Users/zhangdawei/Documents/workspace/alphabiz-crm/target/classes/jp/co/alphabiz/repository/mapper/ActorMapper.class] 
+2022-02-23 18:57:32.217 DEBUG [main] - Creating MapperFactoryBean with name 'actorMapper' and 'jp.co.alphabiz.repository.mapper.ActorMapper' mapperInterface 
+2022-02-23 18:57:32.219 DEBUG [main] - Enabling autowire by type for MapperFactoryBean with name 'actorMapper'. 
+2022-02-23 18:57:32.273 INFO  [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-02-23 18:57:32.292 INFO  [main] - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces. 
+2022-02-23 18:57:32.902 INFO  [main] - Tomcat initialized with port(s): 8090 (http) 
+2022-02-23 18:57:32.912 INFO  [main] - Initializing ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:57:32.912 INFO  [main] - Starting service [Tomcat] 
+2022-02-23 18:57:32.913 INFO  [main] - Starting Servlet engine: [Apache Tomcat/9.0.56] 
+2022-02-23 18:57:32.984 INFO  [main] - Initializing Spring embedded WebApplicationContext 
+2022-02-23 18:57:32.985 INFO  [main] - Root WebApplicationContext: initialization completed in 1300 ms 
+2022-02-23 18:57:33.086 DEBUG [main] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+2022-02-23 18:57:33.167 DEBUG [main] - HikariPool-1 - configuration: 
+2022-02-23 18:57:33.170 DEBUG [main] - allowPoolSuspension................................false 
+2022-02-23 18:57:33.170 DEBUG [main] - autoCommit................................true 
+2022-02-23 18:57:33.170 DEBUG [main] - catalog................................none 
+2022-02-23 18:57:33.170 DEBUG [main] - connectionInitSql................................none 
+2022-02-23 18:57:33.170 DEBUG [main] - connectionTestQuery................................none 
+2022-02-23 18:57:33.170 DEBUG [main] - connectionTimeout................................30000 
+2022-02-23 18:57:33.170 DEBUG [main] - dataSource................................none 
+2022-02-23 18:57:33.170 DEBUG [main] - dataSourceClassName................................none 
+2022-02-23 18:57:33.170 DEBUG [main] - dataSourceJNDI................................none 
+2022-02-23 18:57:33.171 DEBUG [main] - dataSourceProperties................................{password=<masked>} 
+2022-02-23 18:57:33.171 DEBUG [main] - driverClassName................................"com.mysql.cj.jdbc.Driver" 
+2022-02-23 18:57:33.171 DEBUG [main] - exceptionOverrideClassName................................none 
+2022-02-23 18:57:33.171 DEBUG [main] - healthCheckProperties................................{} 
+2022-02-23 18:57:33.172 DEBUG [main] - healthCheckRegistry................................none 
+2022-02-23 18:57:33.172 DEBUG [main] - idleTimeout................................600000 
+2022-02-23 18:57:33.172 DEBUG [main] - initializationFailTimeout................................1 
+2022-02-23 18:57:33.172 DEBUG [main] - isolateInternalQueries................................false 
+2022-02-23 18:57:33.172 DEBUG [main] - jdbcUrl................................jdbc:mysql://localhost/sample_db?characterEncoding=UTF-8 
+2022-02-23 18:57:33.173 DEBUG [main] - keepaliveTime................................0 
+2022-02-23 18:57:33.173 DEBUG [main] - leakDetectionThreshold................................0 
+2022-02-23 18:57:33.173 DEBUG [main] - maxLifetime................................1800000 
+2022-02-23 18:57:33.173 DEBUG [main] - maximumPoolSize................................10 
+2022-02-23 18:57:33.173 DEBUG [main] - metricRegistry................................none 
+2022-02-23 18:57:33.173 DEBUG [main] - metricsTrackerFactory................................none 
+2022-02-23 18:57:33.173 DEBUG [main] - minimumIdle................................10 
+2022-02-23 18:57:33.173 DEBUG [main] - password................................<masked> 
+2022-02-23 18:57:33.173 DEBUG [main] - poolName................................"HikariPool-1" 
+2022-02-23 18:57:33.173 DEBUG [main] - readOnly................................false 
+2022-02-23 18:57:33.173 DEBUG [main] - registerMbeans................................false 
+2022-02-23 18:57:33.174 DEBUG [main] - scheduledExecutor................................none 
+2022-02-23 18:57:33.174 DEBUG [main] - schema................................none 
+2022-02-23 18:57:33.174 DEBUG [main] - threadFactory................................internal 
+2022-02-23 18:57:33.174 DEBUG [main] - transactionIsolation................................default 
+2022-02-23 18:57:33.174 DEBUG [main] - username................................"test_user" 
+2022-02-23 18:57:33.174 DEBUG [main] - validationTimeout................................5000 
+2022-02-23 18:57:33.174 INFO  [main] - HikariPool-1 - Starting... 
+2022-02-23 18:57:33.586 DEBUG [main] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@661e1399 
+2022-02-23 18:57:33.589 INFO  [main] - HikariPool-1 - Start completed. 
+2022-02-23 18:57:33.691 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0) 
+2022-02-23 18:57:33.727 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79c097f7 
+2022-02-23 18:57:33.748 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@98f27b2 
+2022-02-23 18:57:33.772 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37cd0727 
+2022-02-23 18:57:33.812 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c9cdef8 
+2022-02-23 18:57:33.839 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c51595d 
+2022-02-23 18:57:33.862 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a0a51b1 
+2022-02-23 18:57:33.882 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d2a5e72 
+2022-02-23 18:57:33.901 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b7fa85c 
+2022-02-23 18:57:33.924 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f6fd783 
+2022-02-23 18:57:33.924 DEBUG [HikariPool-1 connection adder] - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:57:34.851 INFO  [main] - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-02-23 18:57:35.007 DEBUG [main] - Property 'mapperLocations' was not specified. 
+2022-02-23 18:57:35.274 WARN  [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-02-23 18:57:35.457 DEBUG [main] - 
+	j.c.a.c.IndexController:
+	{GET [/index/ || /]}: initializer(Model) 
+2022-02-23 18:57:35.460 DEBUG [main] - 
+	j.c.a.c.MemberController:
+	{GET [/member]}: index(Model)
+	{GET [/member/search]}: search(ActorForm,Model) 
+2022-02-23 18:57:35.461 DEBUG [main] - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse) 
+2022-02-23 18:57:35.477 DEBUG [main] - 'beanNameHandlerMapping' {} 
+2022-02-23 18:57:35.492 DEBUG [main] - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]} 
+2022-02-23 18:57:35.585 DEBUG [main] - No org.mybatis.spring.mapper.MapperFactoryBean found. 
+2022-02-23 18:57:35.667 INFO  [main] - Starting ProtocolHandler ["http-nio-8090"] 
+2022-02-23 18:57:35.695 INFO  [main] - Tomcat started on port(s): 8090 (http) with context path '' 
+2022-02-23 18:57:35.706 INFO  [main] - Started AlphabizCrmApp in 4.753 seconds (JVM running for 5.97) 
+2022-02-23 18:57:45.663 INFO  [http-nio-8090-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-02-23 18:57:45.664 INFO  [http-nio-8090-exec-1] - Initializing Servlet 'dispatcherServlet' 
+2022-02-23 18:57:45.665 INFO  [http-nio-8090-exec-1] - Completed initialization in 1 ms 
+2022-02-23 18:58:03.704 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:58:03.707 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:58:32.728 DEBUG [http-nio-8090-exec-3] - member + index 
+2022-02-23 18:58:33.711 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:58:33.711 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:58:35.533 DEBUG [http-nio-8090-exec-5] - Actor + search 
+2022-02-23 18:58:35.548 DEBUG [http-nio-8090-exec-5] - Creating a new SqlSession 
+2022-02-23 18:58:35.557 DEBUG [http-nio-8090-exec-5] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64e9d127] was not registered for synchronization because synchronization is not active 
+2022-02-23 18:58:35.644 DEBUG [http-nio-8090-exec-5] - JDBC Connection [HikariProxyConnection@243646572 wrapping com.mysql.cj.jdbc.ConnectionImpl@661e1399] will not be managed by Spring 
+2022-02-23 18:58:35.647 DEBUG [http-nio-8090-exec-5] - ==>  Preparing: SELECT * FROM Actor where 1 = 1  
+2022-02-23 18:58:35.685 DEBUG [http-nio-8090-exec-5] - ==> Parameters:  
+2022-02-23 18:58:35.785 DEBUG [http-nio-8090-exec-5] - <==      Total: 13 
+2022-02-23 18:58:35.787 DEBUG [http-nio-8090-exec-5] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64e9d127] 
+2022-02-23 18:59:03.713 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:59:03.716 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 18:59:33.717 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 18:59:33.718 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:00:03.722 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:00:03.724 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:00:33.725 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:00:33.727 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:01:03.731 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:01:03.732 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:01:33.740 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:01:33.743 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:02:03.747 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:02:03.750 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:02:33.752 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:02:33.755 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:03:03.759 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:03:03.761 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:03:33.765 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:03:33.767 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:04:03.771 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:04:03.771 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:04:33.774 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:04:33.775 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:05:03.776 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:05:03.776 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:05:33.777 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:05:33.778 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:06:03.779 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:06:03.781 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:06:33.782 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:06:33.783 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:07:03.790 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:07:03.794 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:07:33.796 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:07:33.796 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:08:03.797 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:08:03.800 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:08:33.804 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:08:33.804 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:08:45.134 DEBUG [http-nio-8090-exec-7] - member + index 
+2022-02-23 19:08:47.077 DEBUG [http-nio-8090-exec-7] - Actor + search 
+2022-02-23 19:08:47.077 DEBUG [http-nio-8090-exec-7] - Creating a new SqlSession 
+2022-02-23 19:08:47.077 DEBUG [http-nio-8090-exec-7] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79fdc862] was not registered for synchronization because synchronization is not active 
+2022-02-23 19:08:47.079 DEBUG [http-nio-8090-exec-7] - JDBC Connection [HikariProxyConnection@1413388422 wrapping com.mysql.cj.jdbc.ConnectionImpl@661e1399] will not be managed by Spring 
+2022-02-23 19:08:47.080 DEBUG [http-nio-8090-exec-7] - ==>  Preparing: SELECT * FROM Actor where 1 = 1  
+2022-02-23 19:08:47.080 DEBUG [http-nio-8090-exec-7] - ==> Parameters:  
+2022-02-23 19:08:47.090 DEBUG [http-nio-8090-exec-7] - <==      Total: 13 
+2022-02-23 19:08:47.090 DEBUG [http-nio-8090-exec-7] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79fdc862] 
+2022-02-23 19:08:50.492 ERROR [http-nio-8090-exec-7] - [THYMELEAF][http-nio-8090-exec-7] Exception processing template "member/index": An error happened during template parsing (template: "class path resource [templates/member/index.html]") 
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/member/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#list.isEmpty(members)" (template: "member/index" - line 54, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#list.isEmpty(members)" (template: "member/index" - line 54, col 21)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.NegationExpression.executeNegation(NegationExpression.java:149)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:86)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method isEmpty(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 92 common frames omitted
+2022-02-23 19:08:50.495 ERROR [http-nio-8090-exec-7] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/member/index.html]")] with root cause 
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method isEmpty(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.NegationExpression.executeNegation(NegationExpression.java:149)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:86)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-23 19:09:03.805 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:09:03.806 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:09:20.995 DEBUG [http-nio-8090-exec-8] - member + index 
+2022-02-23 19:09:22.618 DEBUG [http-nio-8090-exec-1] - Actor + search 
+2022-02-23 19:09:22.618 DEBUG [http-nio-8090-exec-1] - Creating a new SqlSession 
+2022-02-23 19:09:22.619 DEBUG [http-nio-8090-exec-1] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38ee5f06] was not registered for synchronization because synchronization is not active 
+2022-02-23 19:09:22.623 DEBUG [http-nio-8090-exec-1] - JDBC Connection [HikariProxyConnection@80992137 wrapping com.mysql.cj.jdbc.ConnectionImpl@661e1399] will not be managed by Spring 
+2022-02-23 19:09:22.623 DEBUG [http-nio-8090-exec-1] - ==>  Preparing: SELECT * FROM Actor where 1 = 1  
+2022-02-23 19:09:22.625 DEBUG [http-nio-8090-exec-1] - ==> Parameters:  
+2022-02-23 19:09:22.633 DEBUG [http-nio-8090-exec-1] - <==      Total: 13 
+2022-02-23 19:09:22.634 DEBUG [http-nio-8090-exec-1] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38ee5f06] 
+2022-02-23 19:09:31.068 ERROR [http-nio-8090-exec-1] - [THYMELEAF][http-nio-8090-exec-1] Exception processing template "member/index": An error happened during template parsing (template: "class path resource [templates/member/index.html]") 
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/member/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#list.isEmpty(members)" (template: "member/index" - line 54, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#list.isEmpty(members)" (template: "member/index" - line 54, col 21)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.NegationExpression.executeNegation(NegationExpression.java:149)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:86)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method isEmpty(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 92 common frames omitted
+2022-02-23 19:09:31.071 ERROR [http-nio-8090-exec-1] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/member/index.html]")] with root cause 
+org.springframework.expression.spel.SpelEvaluationException: EL1011E: Method call: Attempted to call method isEmpty(java.util.ArrayList) on null context object
+	at org.springframework.expression.spel.ast.MethodReference.throwIfNotNullSafe(MethodReference.java:154)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:83)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.NegationExpression.executeNegation(NegationExpression.java:149)
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:86)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.GatheringModelProcessable.process(GatheringModelProcessable.java:78)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-02-23 19:09:33.806 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:09:33.807 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:10:03.810 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:10:03.810 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:10:23.412 DEBUG [http-nio-8090-exec-2] - Actor + search 
+2022-02-23 19:10:23.413 DEBUG [http-nio-8090-exec-2] - Creating a new SqlSession 
+2022-02-23 19:10:23.413 DEBUG [http-nio-8090-exec-2] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fd7076e] was not registered for synchronization because synchronization is not active 
+2022-02-23 19:10:23.414 DEBUG [http-nio-8090-exec-2] - JDBC Connection [HikariProxyConnection@737811656 wrapping com.mysql.cj.jdbc.ConnectionImpl@661e1399] will not be managed by Spring 
+2022-02-23 19:10:23.414 DEBUG [http-nio-8090-exec-2] - ==>  Preparing: SELECT * FROM Actor where 1 = 1  
+2022-02-23 19:10:23.415 DEBUG [http-nio-8090-exec-2] - ==> Parameters:  
+2022-02-23 19:10:23.419 DEBUG [http-nio-8090-exec-2] - <==      Total: 13 
+2022-02-23 19:10:23.419 DEBUG [http-nio-8090-exec-2] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fd7076e] 
+2022-02-23 19:10:33.814 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:10:33.818 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:11:03.825 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:11:03.825 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 
+2022-02-23 19:11:33.829 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0) 
+2022-02-23 19:11:33.829 DEBUG [HikariPool-1 housekeeper] - HikariPool-1 - Fill pool skipped, pool is at sufficient level. 

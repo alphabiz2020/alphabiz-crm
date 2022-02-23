@@ -13,19 +13,18 @@ spring:
     url: jdbc:mysql://localhost/sample_db?characterEncoding=UTF-8
     username: test_user
     password: test_user
-# JPA (JpaBaseConfiguration, HibernateJpaAutoConfiguration)
-  jpa:
-    hibernate:
-      show-sql: true
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.MySQLDialect
 
 # INTERNATIONALIZATION (MessageSourceAutoConfiguration)
   messages:
     basename: messages
     cache-seconds: -1
     encoding: UTF-8
-
+# mybatis
+mybatis:
+   mapper-locations: classpath*jp.co.alphabiz.repository.mapper/*Mapper.xml
+   configuration:
+     map-underscore-to-camel-case: true
+   
 # ENDPOINTS (AbstractEndpoint subclasses)
 endpoints:
   enabled: true

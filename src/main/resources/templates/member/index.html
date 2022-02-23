@@ -10,7 +10,7 @@
         <div class="page-header">
           <h1>社員検索</h1>
         </div>
-        <form action="/actor/search" th:action="@{/actor/search}" method="get">
+        <form action="/actor/search" th:action="@{/member/search}" method="get">
           <div class="row">
             <div class="col-md-4">
               <div class="mb-3">
@@ -33,7 +33,7 @@
           <div class="row">
             <div class="col-md-10">
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">検索</button>
+                <button id="search" class="btn btn-primary me-md-2" type="button">検索</button>
               </div>
             </div>
           </div>
@@ -50,6 +50,20 @@
               <th>&nbsp;</th>
             </tr>
           </thead>
+          <tbody>
+          <th:block th:if="!${#lists.isEmpty(members)}" th:each="info, row:${members}" th:data-no="${row.index}+1">
+          <tr>
+              <th><span th:text="${row.index}+1"></span></th>
+              <th><span th:text="${info.name}"></span></th>
+              <th>身長</th>
+              <th>血液型</th>
+              <th>誕生日</th>
+              <th>出身地</th>
+              <th>更新日時</th>
+          </tr>
+          </th:block>
+          
+          </tbody>
           </table>
         </form>
       </div>
