@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -28,13 +29,13 @@ public class MemberController extends AbstractController {
 	MemberService memberService;
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String index(Model model) {
+	public String index(@ModelAttribute("form") MemberForm form, Model model) {
 		logger.debug("member + index");
 		return "member/index";
 	}
 
 	@RequestMapping(value = "/search", method = RequestMethod.POST)
-	public String search(MemberForm form, Model model) {
+	public String search(@ModelAttribute("form") MemberForm form, Model model) {
 		logger.debug("Actor + search");
 		String name = form.getName();
 		String birthplaceId = form.getBirthplaceId();

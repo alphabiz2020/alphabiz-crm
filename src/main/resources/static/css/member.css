@@ -11,3 +11,10 @@
 	display: inline-block;
 	width: 300px;
 }
+
+.ahz-table {
+	border: 4px;
+	border-color: #dee2e6;
+}
+.ahz-table th{
+	}
