@@ -10,7 +10,7 @@
         <div class="page-header">
           <h1>社員検索</h1>
         </div>
-        <form action="/actor/search" th:action="@{/member/search}" method="post" th:object="${form}">
+        <form action="/actor/search" th:action="@{/member/search}" method="get" th:object="${form}">
           <div class="row">
             <div class="col-md-4">
               <div class="mb-3">
@@ -48,23 +48,20 @@
               <th>誕生日</th>
               <th>出身地</th>
               <th>更新日時</th>
-              <th>&nbsp;</th>
             </tr>
           </thead>
           <tbody>
           <th:block th:if="!${#lists.isEmpty(members)}" th:each="info, row:${members}" th:data-no="${row.index}+1">
           <tr>
               <th><span th:text="${row.index}+1"></span></th>
-              <th><span th:text="${info.name}"></span></th>
+              <th><a th:text="${info.name}" th:href="@{/member/detail/?actorId={actorId}(actorId=${info.actorId})}"></a></th>
               <th><span th:text="${info.height}"></span></th>
               <th><span th:text="${info.blood}"></span></th>
               <th><span th:text="${#dates.format(info.birthday, 'yyyy-MM-dd')}"></span></th>
               <th><span th:text="${info.birthplaceId}"></span></th>
-              <th><span th:text="${#dates.format(info.updateAt, 'yyyy-MM-dd hh:mm')}"></span></th>
-              <th>&nbsp;</th>
+              <th><span th:text="${#dates.format(info.updateTime, 'yyyy-MM-dd hh:mm')}"></span></th>
           </tr>
           </th:block>
-          
           </tbody>
           </table>
         </form>

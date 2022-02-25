@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import jp.co.alphabiz.dto.member.ActorInputDto;
 import jp.co.alphabiz.entity.Actor;
 import jp.co.alphabiz.form.MemberForm;
+import jp.co.alphabiz.form.MemberSearchForm;
 import jp.co.alphabiz.service.MemberService;
 
 @Controller
@@ -29,13 +30,13 @@ public class MemberController extends AbstractController {
 	MemberService memberService;
 
 	@RequestMapping(method = RequestMethod.GET)
-	public String index(@ModelAttribute("form") MemberForm form, Model model) {
+	public String index(@ModelAttribute("form") MemberSearchForm form, Model model) {
 		logger.debug("member + index");
 		return "member/index";
 	}
 
-	@RequestMapping(value = "/search", method = RequestMethod.POST)
-	public String search(@ModelAttribute("form") MemberForm form, Model model) {
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public String search(@ModelAttribute("form") MemberSearchForm form, Model model) {
 		logger.debug("Actor + search");
 		String name = form.getName();
 		String birthplaceId = form.getBirthplaceId();
@@ -46,5 +47,13 @@ public class MemberController extends AbstractController {
 		model.addAttribute("members", members);
 		return "member/index";
 	}
-
+	
+	@RequestMapping(value = "/detail", method = RequestMethod.GET)
+	public String detail(@ModelAttribute("form") MemberForm form, Model model) {
+		logger.debug("Actor + detail");
+		String actorId = form.getActorId();
+		Actor member = memberService.getMember(actorId);
+		model.addAttribute("actor", member);
+		return "member/detail";
+	}
 }

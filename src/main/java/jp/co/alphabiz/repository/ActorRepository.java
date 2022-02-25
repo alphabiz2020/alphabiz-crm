@@ -8,9 +8,8 @@ import org.springframework.stereotype.Repository;
 import jp.co.alphabiz.entity.Actor;
 
 @Repository
-public interface ActorRepository  {
+public interface ActorRepository {
 
-
-  List<Actor> findActors(@Param("name") String name, @Param("birthplaceId") String birthplaceId);
-
+	List<Actor> findActors(@Param("name") String name, @Param("birthplaceId") String birthplaceId);
+	Actor findActorById(@Param("actorId") String actorId);
 }

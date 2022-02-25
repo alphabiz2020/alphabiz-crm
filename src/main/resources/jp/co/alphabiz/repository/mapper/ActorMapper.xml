@@ -8,7 +8,11 @@
 		and name like '%${name}%'
 		</if>
 		<if test="birthplaceId !=null and birthplaceId!=''">
-		and name ='${birthplaceId}'
+		and birthplace_id ='${birthplaceId}'
 		</if>
+	</select>
+	<select id="findActorById" resultType="jp.co.alphabiz.entity.Actor">
+		SELECT * FROM Actor
+		where actor_id = #{actorId}
 	</select>
 </mapper>

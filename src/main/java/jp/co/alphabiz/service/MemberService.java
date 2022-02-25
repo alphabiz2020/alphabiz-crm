@@ -24,4 +24,10 @@ public class MemberService {
 		return actorList;
 	}
 
+	public Actor getMember(String actorId) {
+
+		Actor actor = actorRepository.findActorById(actorId);
+		return actor;
+	}
+	
 }

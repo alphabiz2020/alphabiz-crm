@@ -7,7 +7,10 @@ import lombok.Data;
 @Data
 public class MemberForm implements Serializable {
 
-
-  private String name;
-  private String birthplaceId;
+	  private String actorId;
+	  private String name;
+	  private String height;
+	  private String blood;
+	  private String birthday;
+	  private String birthplaceId;
 }
