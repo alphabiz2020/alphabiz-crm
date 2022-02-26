@@ -4,45 +4,47 @@
     <link rel="stylesheet" th:href="@{/css/member.css}" />
     <script th:src="@{/js/member.js}"></script>
   </head>
-<body>
-
-  <div layout:fragment="contents">
-    <div class="page-header">
-      <h1>社員詳細</h1>
-    </div>
-   <form action="/actor/search" th:action="@{/member/detail}" method="post" th:object="${form}">
-
-    <div class="row">
-      <div class="col-md-12">
-        <table class="table" th:object="${actor}">
-          <tr>
-            <th class="col-md-3 active">id</th>
-            <td class="col-md-9" th:text="*{actorId}"></td>
-          </tr>
-          <tr>
-            <th class="col-md-3 active">name</th>
-            <td class="col-md-9" th:text="*{name}"></td>
-          </tr>
-          <tr>
-            <th class="col-md-3 active">height</th>
-            <td class="col-md-9" th:text="*{height}"></td>
-          </tr>
-          <tr>
-            <th class="col-md-3 active">blood</th>
-            <td class="col-md-9"></td>
-          </tr>
-          <tr>
-            <th class="col-md-3 active">birthday</th>
-            <td class="col-md-9" th:text="*{birthday != null}? *{#dates.format(birthday,'yyyy-MM-dd')} : '-'"></td>
-          </tr>
-          <tr>
-            <th class="col-md-3 active">update_at</th>
-            <td class="col-md-9" th:text="*{updateTime}"></td>
-          </tr>
-        </table>
+  <body>
+    <div layout:fragment="contents" class="container">
+      <div class="page-header">
+        <h1>社員詳細</h1>
       </div>
+      <form action="/actor/search" th:action="@{/member/detail}" method="post" th:object="${form}">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table" th:object="${actor}">
+              <tr>
+                <th class="col-md-3 active">名前
+                <input class="form-control" type="hidden" th:field="*{actorId}" />
+                </th>
+                <td class="col-md-9" th:text="*{name}"></td>
+              </tr>
+              <tr>
+                <th class="col-md-3 active">身長</th>
+                <td class="col-md-9" th:text="*{height}"></td>
+              </tr>
+              <tr>
+                <th class="col-md-3 active">血液型</th>
+                <td class="col-md-9" th:text="*{blood}"></td>
+              </tr>
+              <tr>
+                <th class="col-md-3 active">誕生日</th>
+                <td class="col-md-9" th:text="*{birthday != null}? *{#dates.format(birthday,'yyyy-MM-dd')} : '-'"></td>
+              </tr>
+              <tr>
+                <th class="col-md-3 active">出身地</th>
+                <td class="col-md-9" th:text="*{birthplaceName}"></td>
+              </tr>
+              <tr>
+                <th class="col-md-3 active">更新日時</th>
+                <td class="col-md-9" th:text="*{updateTime != null}? *{#dates.format(updateTime,'yyyy-MM-dd')} : '-'"></td>
+              </tr>
+            </table>
+            <button type="button" class="btn btn-success">戻る</button>
+            <button type="button" class="btn btn-danger">編集</button>
+          </div>
+        </div>
+      </form>
     </div>
-    </form>
-  </div>
-</body>
+  </body>
 </html>

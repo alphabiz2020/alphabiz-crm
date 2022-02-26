@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import jp.co.alphabiz.dto.member.ActorDto;
 import jp.co.alphabiz.dto.member.ActorInputDto;
-import jp.co.alphabiz.entity.Actor;
+import jp.co.alphabiz.entity.Prefecture;
 import jp.co.alphabiz.form.MemberForm;
 import jp.co.alphabiz.form.MemberSearchForm;
 import jp.co.alphabiz.service.MemberService;
@@ -32,27 +33,31 @@ public class MemberController extends AbstractController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(@ModelAttribute("form") MemberSearchForm form, Model model) {
 		logger.debug("member + index");
+		List<Prefecture> prefectures = memberService.getPrefectureList();
+		model.addAttribute("prefectures", prefectures);
 		return "member/index";
 	}
 
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public String search(@ModelAttribute("form") MemberSearchForm form, Model model) {
 		logger.debug("Actor + search");
+		List<Prefecture> prefectures = memberService.getPrefectureList();
+		model.addAttribute("prefectures", prefectures);
 		String name = form.getName();
 		String birthplaceId = form.getBirthplaceId();
 		ActorInputDto inputDto = new ActorInputDto();
-		inputDto.setName(name); 
-		inputDto.setBirthplaceId(birthplaceId); 
-		List<Actor> members = memberService.getMemberList(inputDto);
+		inputDto.setName(name);
+		inputDto.setBirthplaceId(birthplaceId);
+		List<ActorDto> members = memberService.getMemberList(inputDto);
 		model.addAttribute("members", members);
 		return "member/index";
 	}
-	
+
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public String detail(@ModelAttribute("form") MemberForm form, Model model) {
 		logger.debug("Actor + detail");
 		String actorId = form.getActorId();
-		Actor member = memberService.getMember(actorId);
+		ActorDto member = memberService.getMember(actorId);
 		model.addAttribute("actor", member);
 		return "member/detail";
 	}

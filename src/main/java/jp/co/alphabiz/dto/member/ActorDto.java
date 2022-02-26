@@ -1,11 +1,11 @@
-package jp.co.alphabiz.entity;
+package jp.co.alphabiz.dto.member;
 
 import java.util.Date;
 
 import lombok.Data;
 
 @Data
-public class Actor {
+public class ActorDto {
 
   private String actorId;
   private String name;
@@ -13,6 +13,7 @@ public class Actor {
   private String blood;
   private Date birthday;
   private Integer birthplaceId;
+  private String birthplaceName;
   private Date updateTime;
   private Date createTime;
   private String deleteFlg;

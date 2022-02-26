@@ -5,29 +5,42 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import jp.co.alphabiz.dto.member.ActorDto;
 import jp.co.alphabiz.dto.member.ActorInputDto;
-import jp.co.alphabiz.entity.Actor;
+import jp.co.alphabiz.entity.Prefecture;
 import jp.co.alphabiz.repository.ActorRepository;
+import jp.co.alphabiz.repository.PrefectureRepository;
 
 @Service
 public class MemberService {
 
 	@Autowired
 	ActorRepository actorRepository;
-//
-//	@Autowired
-//	PrefectureRepository prefectureRepository;
 
-	public List<Actor> getMemberList(ActorInputDto inputDto) {
+	@Autowired
+	PrefectureRepository prefectureRepository;
 
-		List<Actor> actorList = actorRepository.findActors(inputDto.getName(), inputDto.getBirthplaceId());
+	/**
+	 * @param inputDto
+	 * @return
+	 */
+	public List<ActorDto> getMemberList(ActorInputDto inputDto) {
+
+		List<ActorDto> actorList = actorRepository.findActors(inputDto.getName(), inputDto.getBirthplaceId());
 		return actorList;
 	}
 
-	public Actor getMember(String actorId) {
+	public ActorDto getMember(String actorId) {
 
-		Actor actor = actorRepository.findActorById(actorId);
+		ActorDto actor = actorRepository.findActorById(actorId);
 		return actor;
 	}
-	
+	/**
+	 * @return
+	 */
+	public List<Prefecture> getPrefectureList() {
+
+		List<Prefecture> prefectureList = prefectureRepository.findAll();
+		return prefectureList;
+	}
 }
